@@ -7,6 +7,8 @@ Some of the key functionailities allowed are:
 2. Add a new book record.
 3. Update an entry.
 4. Delete an entry.
+5. View all records
+6. Close the program
 
 Key areas of the project are:
 1. Backend: [sqlite](https://www.sqlite.org/index.html) code to maintain the database
