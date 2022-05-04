@@ -56,16 +56,18 @@ def delete(id):
 def update(id, title, author, year, isbn):
     conn = sqlite3.connect("books.db")
     cur = conn.cursor()
-    cur.execute("UPDATE book SET title=?, author=?, year=?, isbn=? WHERE id=?", (title, author, year, isbn, id))
+    cur.execute("UPDATE book SET title=?, author=?, year=?, isbn=? WHERE id=?",
+                (title, author, year, isbn, id, ))
     conn.commit()
     conn.close()
     pass
 
+
 insert("The Seat", "John Tablet", 1918, 232472962)
 print(view())
-insert("Apple", "John Smith", 1987, 354873)
-print(search(author="John Smith"))
-delete(3)
-print(view())
+#insert("Apple", "John Smith", 1987, 354873)
+#print(search(author="John Smith"))
+#delete(3)
+#print(view())
 update(1, "The Moon", "John Tablet", 1918, 232472962)
 print(view())
