@@ -70,10 +70,10 @@ button2.grid(row=3, column=3)
 button3 = Button(window, text="Add Entry", width=12)
 button3.grid(row=4, column=3)
 
-button4 = Button(window, text="Update", width=12)
+button4 = Button(window, text="Update Selected", width=12)
 button4.grid(row=5, column=3)
 
-button5 = Button(window, text="Delete", width=12)
+button5 = Button(window, text="Delete Selected", width=12)
 button5.grid(row=6, column=3)
 
 button6 = Button(window, text="Close", width=12)
