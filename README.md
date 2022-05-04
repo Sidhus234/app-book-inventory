@@ -14,3 +14,8 @@ Key areas of the project are:
 1. Backend: [sqlite](https://www.sqlite.org/index.html) code to maintain the database
 2. Frontend: GUI using [Tkinter](https://docs.python.org/3/library/tk.html) library
 
+<h1>How to make executable file using pyinstaller</h1>
+1. Install pyinstaller
+2. Run command pyinstaller main.py (This will generate multiple files.)
+3. Instead run pyinstaller --onefile main.py (This will generate one executable file)
+
